@@ -6,7 +6,7 @@ Plug 'lervag/vimtex'
 Plug 'SirVer/ultisnips'
 Plug 'KeitaNakamura/tex-conceal.vim'
 Plug 'jpalardy/vim-slime'
-
+Plug 'honza/vim-snippets'
 call plug#end()
 
 " General settings
@@ -27,6 +27,7 @@ let g:vimtex_quickfix_mode=0
 let g:UltiSnipsExpandTrigger = '<tab>'
 let g:UltiSnipsJumpForwardTrigger = '<tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+let g:UltiSnipsEditSplit="vertical"
 
 " Tex-Conceal settings
 set conceallevel=1
