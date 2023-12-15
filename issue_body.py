@@ -1,4 +1,5 @@
 import yaml
+import dateparser
 
 # Prompt for details
 deadline = input("Enter deadline: ")
@@ -6,6 +7,10 @@ length = input("Enter length: ")
 previous = input("Enter previous: ")
 next_step = input("Enter next step: ")
 budget = input("Enter budget: ")
+
+# use dateparser to convert deadline to date object
+# then, convert date object to string using isoformat()
+deadline = dateparser.parse(deadline).isoformat()
 
 # Prepare data
 data = {
