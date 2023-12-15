@@ -14,3 +14,4 @@ BODY=$(cat issue_body.md)
 # Create issue with gh
 gh issue create --title "$TITLE" --body "$BODY"
 
+rm issue_body.md
