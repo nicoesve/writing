@@ -12,6 +12,6 @@ nvim issue_body.md
 BODY=$(cat issue_body.md)
 
 # Create issue with gh
-gh issue create --title "$TITLE" --body "$BODY"
+gh issue create --title "$TITLE" --body "$BODY" --repo $2
 
 rm issue_body.md
