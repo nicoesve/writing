@@ -3,7 +3,7 @@
 TITLE=$1
 
 # Run the Python script
-python3 issue_body.py
+python3 /root/writing/issue_body.py
 
 # Open issue_body.md in nvim and wait for it to be closed
 nvim issue_body.md
